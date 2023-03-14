@@ -8,6 +8,8 @@
 pnpm install
 ```
 
+- Ponemos las variables de entorno en el archivo ".env" (ver archivo ".env.example").
+
 - Para ejecutar el proyecto en modo desarrollo:
 
 ```
