@@ -1,27 +1,29 @@
-import { useProducts } from '@/hooks/useProducts'
-import { useEffect } from 'react'
 import './styles.css'
 
-export const Products = () => {
-  const { products, loading, error, getProducts } = useProducts()
+const WithResults = ({ products }) => (
+  <ul className='products'>
+    {products?.map((product) => (
+      <li className='product' key={product?.id}>
+          <img src={product?.image} alt={product?.model} />
+          <h4>{product?.brand} - {product?.model}
+          {product?.price.length > 0 ? <span> ${product?.price}</span> : null}
+          </h4>
+      </li>
+    ))}
+  </ul>
 
-  useEffect(() => {
-    getProducts()
-  }, [])
+)
 
-  console.log({ products, loading, error })
+const WithoutResults = () => (
+    <h2>No hay resultados...</h2>
+)
+
+export const Products = ({ products }) => {
+  const haveProducts = products?.length > 0
+
   return (
     <div >
-      <ul className='products'>
-          {products.map((product) => (
-              <li className='product' key={product.id}>
-                  <img src={product.image} alt={product.model} />
-                  <h4>{product.brand} - {product.model}
-                  {product?.price.length > 0 ? <span>${product.price}</span> : null}
-                  </h4>
-              </li>
-          ))}
-      </ul>
+      {haveProducts ? <WithResults products={products} /> : <WithoutResults />}
     </div>
   )
 }
