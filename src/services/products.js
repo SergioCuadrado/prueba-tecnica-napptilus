@@ -1,8 +1,9 @@
-const { VITE_API_PRODUCTS } = import.meta.env
+const API_URL = 'https://itx-frontend-test.onrender.com/api'
+
 export const getListProducts = async () => {
   const { signal } = new AbortController()
   try {
-    const response = await fetch(`${VITE_API_PRODUCTS}/product`, { signal })
+    const response = await fetch(`${API_URL}/product`, { signal })
     if (!response.ok) throw new Error('Error: No se pudo obtener los productos')
     if (signal.aborted) throw new Error('Petición cancelada, inténtelo de nuevo')
 
