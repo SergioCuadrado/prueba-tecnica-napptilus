@@ -7,7 +7,7 @@ header {
 
 .cart-button {
     align-items: center;
-    background: #09f;
+    background: var(--color-primary);
     border-radius: 9999px;
     cursor: pointer;
     display: flex;
@@ -27,7 +27,7 @@ header {
 .cart-button span {
     background: #fff;
     border-radius: 9999px;
-    color: #09f;
+    color: var(--color-primary);
     font-size: 0.8rem;
     font-weight: 600;
     height: 20px;
@@ -45,5 +45,5 @@ header {
 }
 
 .title-app:hover {
-    color: #09f;
+    color: var(--color-primary);
 }
