@@ -3,17 +3,12 @@ import { ProductList } from '@/pages/ProductList'
 import { ProductsFilterProvider } from './contexts/filter'
 import { ProductsProvider } from './contexts/products'
 
-function App () {
+export const App = () => {
   return (
-    <div className="page">
-      <h1>React App</h1>
-      <ProductsProvider>
-        <ProductsFilterProvider>
-          <ProductList />
-        </ProductsFilterProvider>
-      </ProductsProvider>
-    </div>
+    <ProductsProvider>
+      <ProductsFilterProvider>
+        <ProductList />
+      </ProductsFilterProvider>
+    </ProductsProvider>
   )
 }
-
-export default App
