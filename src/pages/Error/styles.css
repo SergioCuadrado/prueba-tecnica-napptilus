@@ -20,7 +20,7 @@
     text-decoration: none;
     font-size: 1.2em;
     margin-top: 1em;
-    background-color: #09f;
+    background-color: var(--color-primary);
     padding: 10px;
     border-radius: 5px;
     color: #fff;
