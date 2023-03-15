@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <ProductList /> Snapshot de la página 1`] = `
+<div>
+  <span
+    class="loader"
+  />
+</div>
+`;
