@@ -6,12 +6,13 @@
     "dev": "vite",
     "build": "vite build",
     "start": "vite preview",
-    "lint": "eslint --ext .js,.jsx src",
+    "lint": "eslint --fix --ext .js,.jsx .",
     "test": "jest --watchAll"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",
