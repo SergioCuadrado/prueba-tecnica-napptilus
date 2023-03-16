@@ -173,6 +173,11 @@
     top: -5px;
 }
 
+.buy-product button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
 /* responsive */
 @media (max-width: 1080px) {
     .container {

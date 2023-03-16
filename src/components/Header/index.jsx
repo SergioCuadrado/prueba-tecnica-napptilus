@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
+import { useAddProduct } from '../../hooks/useAddProduct'
 import { Breadcrumbs } from '../Breadcrumbs'
 import { CartIcon } from '../Icons'
 import './styles.css'
 
 export const Header = () => {
+  const { productsOnCart } = useAddProduct()
   return (
     <header>
       <div>
@@ -14,7 +16,7 @@ export const Header = () => {
       </div>
       <label className='cart-button' htmlFor="">
         <CartIcon />
-        <span>5</span>
+        <span>{productsOnCart}</span>
       </label>
     </header>
   )
