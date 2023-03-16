@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en la pagina <Error /> Debe de mostrarse correctamente 1`] = `
+<div>
+  <section
+    class="error-page"
+  >
+    <h2>
+      404
+       Error
+    </h2>
+    <p>
+      Not Found
+    </p>
+    <a
+      href="/"
+    >
+      Volver a la página inicial
+    </a>
+  </section>
+</div>
+`;
