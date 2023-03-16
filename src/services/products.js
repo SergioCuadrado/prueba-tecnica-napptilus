@@ -58,3 +58,24 @@ export const getProduct = async ({ id }) => {
     throw new Error(error.message)
   }
 }
+
+export const addProduct = async (productAdded) => {
+  const { signal } = new AbortController()
+  try {
+    const response = await fetch(`${API_URL}/cart`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(productAdded),
+      signal
+    })
+    if (!response.ok) throw new Error('Error: No se pudo agregar el producto')
+    if (signal.aborted) throw new Error('Petición cancelada, inténtelo de nuevo')
+
+    return await response.json()
+  } catch (error) {
+    if (error.name === 'AbortError') return
+    throw new Error(error.message)
+  }
+}
