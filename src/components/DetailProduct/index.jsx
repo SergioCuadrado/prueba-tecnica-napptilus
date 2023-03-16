@@ -1,20 +1,37 @@
 import { useState } from 'react'
+import { useAddProduct } from '../../hooks/useAddProduct'
 
 export const DetailProduct = ({ product, descriptionProducts, optionsProduct }) => {
-  const [actions, setActions] = useState({ color: '', capacity: '' })
-  console.log(optionsProduct)
+  const storageDefault = optionsProduct.storages.length === 1 ? optionsProduct.storages[0].name : ''
+  const colorDefault = optionsProduct.colors.length === 1 ? optionsProduct.colors[0].code : ''
+
+  const [actions, setActions] = useState({ colorCode: colorDefault, storageCode: storageDefault })
+  const { getAddProductCart } = useAddProduct()
   if (!optionsProduct) return null
 
   const handleColorsChange = ({ target }) => {
-    const color = Number(target.name)
+    const colorCode = Number(target.name)
     setActions({
       ...actions,
-      color
+      colorCode
+    })
+  }
+
+  const handleStorageChange = ({ target }) => {
+    const storageCode = target.value
+    setActions({
+      ...actions,
+      storageCode
     })
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    const productAdded = {
+      id: product.description.id,
+      ...actions
+    }
+    getAddProductCart(productAdded)
   }
 
   return (
@@ -47,7 +64,7 @@ export const DetailProduct = ({ product, descriptionProducts, optionsProduct }) 
             </table>
             <form className='buy-product' onSubmit={handleSubmit}>
                 <label className='capacity' htmlFor="capacity">Capacidad</label>
-                <select name="capacity" id="capacity">
+                <select name="capacity" id="capacity" onChange={handleStorageChange}>
                     {optionsProduct.storages.map((capacity) => (
                         <option key={capacity.code} value={capacity.name}>{capacity.name}</option>
                     ))}
@@ -56,13 +73,13 @@ export const DetailProduct = ({ product, descriptionProducts, optionsProduct }) 
                 <div className="product-colors" >
                 {optionsProduct.colors.map((color) => (
                     <div key={color.code}>
-                        <label className={`${color.name} ${actions.color === color.code ? 'active' : null}`} style={{ backgroundColor: color?.name.toLowerCase() }} htmlFor={color.code} />
+                        <label className={`${color.name} ${actions.colorCode === color.code ? 'active' : null}`} style={{ backgroundColor: color?.name.toLowerCase() }} htmlFor={color.code} />
                         <input type="checkbox" name={color.code} id={color.code} onChange={handleColorsChange} checked={actions.color === color.code} hidden />
                     </div>
                 ))}
                 </div>
                 <h3>$ {product.description.price}</h3>
-                <button>Comprar</button>
+                <button disabled={actions.colorCode === '' || actions.storageCode === ''}>Comprar</button>
             </form>
           </div>
       </div>
