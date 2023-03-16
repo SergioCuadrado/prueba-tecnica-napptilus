@@ -3,8 +3,6 @@ import { useParams } from 'react-router-dom'
 import { DetailProduct } from '../../components/DetailProduct'
 import { useProduct } from '../../hooks/useProduct'
 
-import './styles.css'
-
 const DETAILS_IN_SPANISH = {
   brand: 'Marca',
   model: 'Modelo',
@@ -22,7 +20,7 @@ const DETAILS_IN_SPANISH = {
 
 export const ProductDetail = () => {
   const { id } = useParams()
-  const { getDetailProduct, product } = useProduct({ id })
+  const { getDetailProduct, product } = useProduct()
 
   useEffect(() => {
     getDetailProduct({ id })

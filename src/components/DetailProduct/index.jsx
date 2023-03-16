@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { useAddProduct } from '../../hooks/useAddProduct'
 
+import './styles.css'
+
 export const DetailProduct = ({ product, descriptionProducts, optionsProduct }) => {
   const storageDefault = optionsProduct.storages.length === 1 ? optionsProduct.storages[0].name : ''
   const colorDefault = optionsProduct.colors.length === 1 ? optionsProduct.colors[0].code : ''
