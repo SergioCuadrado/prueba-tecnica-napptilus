@@ -5,8 +5,22 @@
 .breadcrumb-active {
     color: var(--color-primary);
 }
-    
-.breadcrumb-arrow {
-    margin-left: 10px;
-    margin-right: 10px;
+
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs .crumb::after {
+    content: ">";
+    margin: 0 10px;
+    color: #cccccc;
+}
+
+.breadcrumbs .crumb:last-child::after {
+    content: "";
+    margin: 0;
 }

@@ -5,11 +5,19 @@ import './styles.css'
 export const Breadcrumbs = () => {
   const location = useLocation()
 
+  let currentLink = ''
+  const crumbs = location.pathname.split('/').filter((crumb) => crumb).map((crumb) => {
+    currentLink += `/${crumb}`
+    return (
+      <nav className='crumb' key={crumb}>
+        <Link to={currentLink} className={location.pathname === currentLink ? 'breadcrumb-active' : 'breadcrumb-not-active'}>{crumb}</Link>
+      </nav>
+    )
+  })
+
   return (
-    <nav>
-        <Link to="/" className={location.pathname === '/' ? 'breadcrumb-active' : 'breadcrumb-not-active'}>Home</Link>
-        <span className="breadcrumb-arrow">&gt;</span>
-        <Link to="/products" className={location.pathname.startsWith('/products') ? 'breadcrumb-active' : 'breadcrumb-not-active'}>Products</Link>
-    </nav>
+    <div className='breadcrumbs'>
+      {crumbs}
+    </div>
   )
 }

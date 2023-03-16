@@ -4,12 +4,11 @@ import './styles.css'
 
 export const ErrorPage = () => {
   const error = useRouteError()
-
   return (
     <section className='error-page'>
-        <h2>{error.status} Error</h2>
-        <p>{error.data}</p>
-        <Link to='/'>Volver a la página inicial</Link>
+        <h2>{error?.status} Error</h2>
+        <p>{error?.data}</p>
+        <Link to='/products'>Volver a la página inicial</Link>
     </section>
   )
 }

@@ -32,6 +32,6 @@ describe('Pruebas en la pagina <Error />', () => {
         </MemoryRouter>
     )
     const link = getByText('Volver a la página inicial')
-    expect(link.getAttribute('href')).toBe('/')
+    expect(link.getAttribute('href')).toBe('/products')
   })
 })

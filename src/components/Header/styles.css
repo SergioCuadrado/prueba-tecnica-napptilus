@@ -5,6 +5,10 @@ header {
     align-items: center;
 }
 
+header div {
+    text-align: left;
+}
+
 .cart-button {
     align-items: center;
     background: var(--color-primary);
