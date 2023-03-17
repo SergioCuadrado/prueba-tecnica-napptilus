@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 
 import { ProductList } from '@/pages/ProductList'
 import { FilterContext } from '@/contexts/filter'
