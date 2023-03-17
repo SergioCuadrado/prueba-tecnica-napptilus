@@ -20,7 +20,7 @@ export const useProduct = () => {
       updateLocalStorage(`product-${id}`, { data: products, creation: Date.now() })
       setProduct(products)
     } catch (error) {
-      setError(error)
+      setError(error.message)
     } finally {
       setLoading(false)
     }

@@ -20,7 +20,7 @@ const DETAILS_IN_SPANISH = {
 
 export const ProductDetail = () => {
   const { id } = useParams()
-  const { getDetailProduct, product } = useProduct()
+  const { getDetailProduct, product, error } = useProduct()
 
   useEffect(() => {
     getDetailProduct({ id })
@@ -38,14 +38,23 @@ export const ProductDetail = () => {
 
   const optionsProduct = product ? product.options : null
 
+  if (error) return <DetailErrorProduct error={error} />
   return (
     <>
-    {product
-      ? <DetailProduct product={product} descriptionProducts={descriptionProducts} optionsProduct={optionsProduct} />
-      : null
-    }
-
+      {product
+        ? <DetailProduct product={product} descriptionProducts={descriptionProducts} optionsProduct={optionsProduct} errorValue={error} />
+        : null
+      }
     </>
 
+  )
+}
+
+const DetailErrorProduct = ({ error }) => {
+  return (
+    <>
+      <h2>{error}</h2>
+      <p>Por favor, intenta nuevamente más tarde</p>
+    </>
   )
 }

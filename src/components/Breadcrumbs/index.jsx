@@ -12,7 +12,6 @@ const routes = [
 
 export const Breadcrumbs = () => {
   const breadcrumbs = useBreadcrumbs(routes)
-  console.log(breadcrumbs)
 
   return (
     <nav className='breadcrumbs'>

@@ -26,7 +26,7 @@ export const getProduct = async ({ id }) => {
   const { signal } = new AbortController()
   try {
     const response = await fetch(`${API_URL}/product/${id}`, { signal })
-    if (!response.ok) throw new Error('Error: No se pudo obtener el producto')
+    if (!response.ok) throw new Error('Ups! este producto no se pudo obtener/no existe')
     if (signal.aborted) throw new Error('Petición cancelada, inténtelo de nuevo')
 
     const product = await response.json()
