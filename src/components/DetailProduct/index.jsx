@@ -105,7 +105,7 @@ const Form = ({ handleSubmit, optionsProduct, actions, handleColorsChange, produ
         ))}
         </div>
         <h3>$ {product.description.price}</h3>
-        <button disabled={actions.colorCode === '' || actions.storageCode === ''}>Comprar</button>
+        <button disabled={actions.colorCode === '' || actions.storageCode === ''}>Añadir a la cesta</button>
     </form>
   )
 }
