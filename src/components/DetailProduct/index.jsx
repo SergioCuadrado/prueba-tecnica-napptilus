@@ -1,7 +1,11 @@
 import { useState } from 'react'
 import Select from 'react-select'
 import { useAddProduct } from '../../hooks/useAddProduct'
+
+import { toast } from 'react-toastify'
+
 import './styles.css'
+import { Notification } from '../Notification'
 
 export const DetailProduct = ({ product, descriptionProducts, optionsProduct }) => {
   const storageDefault = optionsProduct.storages.length === 1
@@ -12,9 +16,13 @@ export const DetailProduct = ({ product, descriptionProducts, optionsProduct }) 
     : ''
   const colorDefault = optionsProduct.colors.length === 1 ? optionsProduct.colors[0].code : ''
   const StorageOptions = optionsProduct.storages.map((color) => ({ value: color.code, label: color.name }))
-  const [actions, setActions] = useState({ colorCode: colorDefault, storageCode: storageDefault?.value ? storageDefault.value : '' })
-  const { getAddProductCart } = useAddProduct()
-  if (!optionsProduct) return null
+
+  const [actions, setActions] = useState({
+    colorCode: colorDefault,
+    storageCode: storageDefault?.value ? storageDefault.value : ''
+  })
+
+  const { getAddProductCart, error } = useAddProduct()
 
   const handleColorsChange = ({ target }) => {
     const colorCode = Number(target.name)
@@ -37,22 +45,49 @@ export const DetailProduct = ({ product, descriptionProducts, optionsProduct }) 
       id: product.description.id,
       ...actions
     }
-    getAddProductCart(productAdded)
+    getAddProductCart(productAdded).then((res) => {
+      if (error) {
+        return toast.error('🛒 Error al añadir al carrito', {
+          position: 'top-right',
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: 0,
+          theme: 'dark'
+        })
+      } else {
+        notify()
+      }
+    })
   }
-
+  const notify = () => toast.success('🛒 Añadido al carrito', {
+    position: 'top-right',
+    autoClose: 4000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: 0,
+    theme: 'dark'
+  })
   return (
-    <div className="container">
-      <div className="imgBx" data-content={product.description.brand}>
-          <img src={product.description.image} alt={product.description.model} />
+    <>
+      <Notification />
+      <div className="container">
+        <div className="imgBx" data-content={product.description.brand}>
+            <img src={product.description.image} alt={product.description.model} />
+        </div>
+        <div className="details">
+            <div className="content">
+              <h2>{product.description.model}</h2>
+              <TableDescription descriptionProducts={descriptionProducts} />
+              <Form handleSubmit={handleSubmit} optionsProduct={optionsProduct} actions={actions} handleColorsChange={handleColorsChange} product={product} storageDefault={storageDefault} handleStorageChange={handleStorageChange} StorageOptions={StorageOptions} />
+            </div>
+        </div>
       </div>
-      <div className="details">
-          <div className="content">
-            <h2>{product.description.model}</h2>
-            <TableDescription descriptionProducts={descriptionProducts} />
-            <Form handleSubmit={handleSubmit} optionsProduct={optionsProduct} actions={actions} handleColorsChange={handleColorsChange} product={product} storageDefault={storageDefault} handleStorageChange={handleStorageChange} StorageOptions={StorageOptions} />
-          </div>
-      </div>
-    </div>
+    </>
   )
 }
 
