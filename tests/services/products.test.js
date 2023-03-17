@@ -49,7 +49,6 @@ describe('Pruebas en el servicio `products`', () => {
         }
       })
     } catch (error) {
-      console.log(error)
     }
   })
 
