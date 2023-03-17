@@ -13,7 +13,7 @@ exports[`Pruebas en la pagina <Error /> Debe de mostrarse correctamente 1`] = `
       Not Found
     </p>
     <a
-      href="/products"
+      href="/"
     >
       Volver a la página inicial
     </a>

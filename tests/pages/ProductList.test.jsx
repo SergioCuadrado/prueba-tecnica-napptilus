@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 
 import { ProductList } from '@/pages/ProductList'
 import { FilterContext } from '@/contexts/filter'
@@ -27,7 +27,7 @@ describe('Pruebas en <ProductList />', () => {
     expect(container).toMatchSnapshot()
   })
 
-  test('Cuando inicias tiene que salir el spinner cargando', () => {
+  test('Cuando inicias por primera vez tiene que mostrarse el `skeleton` de react', () => {
     const { container } = render(
       <FilterContext.Provider value={{ filter, setProductsFilter: setProductsFilterMock }}>
         <ProductsContext.Provider value={{ products: [], setProducts: setProductsMock }}>
@@ -36,6 +36,6 @@ describe('Pruebas en <ProductList />', () => {
       </FilterContext.Provider>
     )
 
-    expect(container.querySelector('.loader')).toBeInTheDocument()
+    expect(container.querySelector('.react-loading-skeleton')).toBeInTheDocument()
   })
 })

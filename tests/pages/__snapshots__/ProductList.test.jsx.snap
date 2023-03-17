@@ -2,8 +2,1625 @@
 
 exports[`Pruebas en <ProductList /> Snapshot de la página 1`] = `
 <div>
-  <span
-    class="loader"
-  />
+  <form
+    class="form"
+  >
+    <label
+      for=":r0:"
+    >
+      Búsqueda por marca / modelo:
+    </label>
+    <input
+      id=":r0:"
+      name=":r0:"
+      placeholder="Liquid, Iconia..."
+      type="text"
+      value=""
+    />
+  </form>
+  <ul
+    class="products"
+  >
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+    <li
+      class="product"
+    >
+      <span
+        aria-busy="true"
+        aria-live="polite"
+      >
+        <span
+          class="react-loading-skeleton"
+          style="height: 250px;"
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </li>
+  </ul>
 </div>
 `;
