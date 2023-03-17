@@ -1,23 +1,32 @@
-import { Link, useLocation } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+
+import useBreadcrumbs from 'use-react-router-breadcrumbs'
 
 import './styles.css'
 
-export const Breadcrumbs = () => {
-  const location = useLocation()
+const routes = [
+  { path: '/', breadcrumb: 'Home' },
+  { path: '/products', breadcrumb: 'Productos' },
+  { path: '/products/:id', breadcrumb: 'Detalles Producto' }
+]
 
-  let currentLink = ''
-  const crumbs = location.pathname.split('/').filter((crumb) => crumb).map((crumb) => {
-    currentLink += `/${crumb}`
-    return (
-      <nav className='crumb' key={crumb}>
-        <Link to={currentLink} className={location.pathname === currentLink ? 'breadcrumb-active' : 'breadcrumb-not-active'}>{crumb}</Link>
-      </nav>
-    )
-  })
+export const Breadcrumbs = () => {
+  const breadcrumbs = useBreadcrumbs(routes)
+  console.log(breadcrumbs)
 
   return (
-    <div className='breadcrumbs'>
-      {crumbs}
-    </div>
+    <nav className='breadcrumbs'>
+     { breadcrumbs.map(({ match, breadcrumb }) => (
+       match.pathname !== '/products'
+         ? (
+            <NavLink key={match.pathname} to={match.pathname} className={({ isActive, isPending }) =>
+              `breadcrumbs breadcrumb-${isActive ? 'active' : isPending ? 'pending' : 'not-active'}`
+          }>
+            {breadcrumb}
+          </NavLink>
+           )
+         : null
+     ))}
+    </nav>
   )
 }

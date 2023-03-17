@@ -9,21 +9,22 @@ import { App } from '@/App'
 import { ProductDetail } from './pages/ProductDetail'
 
 import './index.css'
+
 // route / to /products redirect
 
 const router = createBrowserRouter([
   {
-    path: '/products',
+    path: '/',
     element: <Home />,
     errorElement: <ErrorPage />,
     loaderElement: <Loader />,
     children: [
       {
-        path: '/products',
+        path: '/',
         element: <App />
       },
       {
-        path: '/products/:id',
+        path: 'products/:id',
         element: <ProductDetail />
       }
     ]
@@ -38,6 +39,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
   </React.StrictMode>
 )

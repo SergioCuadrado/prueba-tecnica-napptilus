@@ -8,7 +8,7 @@ export const ErrorPage = () => {
     <section className='error-page'>
         <h2>{error?.status} Error</h2>
         <p>{error?.data}</p>
-        <Link to='/products'>Volver a la página inicial</Link>
+        <Link to='/'>Volver a la página inicial</Link>
     </section>
   )
 }

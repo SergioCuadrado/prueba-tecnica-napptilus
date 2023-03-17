@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <header>
       <div>
-        <Link to='/products' className='title-app'>
+        <Link to='/' className='title-app'>
           <h1>Napptilus-Shop</h1>
         </Link>
         <Breadcrumbs />
