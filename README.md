@@ -2,6 +2,8 @@
 
 ## Descripción
 
+- Teneis en la sección de 'tags' en Github como ha ido evolucionando el proyecto y que funcionalidades se han ido añadiendo.
+
 - Instalamos las dependencias con el gestor de paquetes "pnpm" (https://pnpm.io/). Otra opción es usar "npm" o "yarn".
 
 ```
