@@ -79,7 +79,7 @@ describe('Pruebas en el servicio `products`', () => {
         count: expect.any(Number)
       })
     } catch (error) {
-      // console.log(error)
+
     }
   })
 })

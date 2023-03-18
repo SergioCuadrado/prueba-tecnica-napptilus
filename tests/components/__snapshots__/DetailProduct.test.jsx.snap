@@ -1,0 +1,315 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <DetailProduct /> Debe de mostrar el componente correctamente 1`] = `
+<div>
+  <div
+    class="Toastify"
+  />
+  <div
+    class="container"
+  >
+    <div
+      class="imgBx"
+      data-content="Acer"
+    >
+      <img
+        alt="Iconia Talk S"
+        src="https://itx-frontend-test.onrender.com/images/ZmGrkLRPXOTpxsU4jjAcv.jpg"
+      />
+    </div>
+    <div
+      class="details"
+    >
+      <div
+        class="content"
+      >
+        <h2>
+          Iconia Talk S
+        </h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <span>
+                  Battery
+                </span>
+              </td>
+              <td>
+                <span>
+                  Non-removable Li-Ion 3400 mAh battery (12.92 Wh)
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  Modelo
+                </span>
+              </td>
+              <td>
+                <span>
+                  Iconia Talk S
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  Precio
+                </span>
+              </td>
+              <td>
+                <span>
+                  170
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  CPU
+                </span>
+              </td>
+              <td>
+                <span>
+                  Quad-core 1.3 GHz Cortex-A53
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  RAM
+                </span>
+              </td>
+              <td>
+                <span>
+                  2 GB RAM
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  Sistema Operativo
+                </span>
+              </td>
+              <td>
+                <span>
+                  Android 6.0 (Marshmallow)
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  Resolución de pantalla
+                </span>
+              </td>
+              <td>
+                <span>
+                  7.0 inches (~69.8% screen
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  Batería
+                </span>
+              </td>
+              <td>
+                <span>
+                  Non-removable Li-Ion 3400
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  Cámara principal
+                </span>
+              </td>
+              <td>
+                <span>
+                  13 MP
+                  autofocus
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  Cámara secundaria
+                </span>
+              </td>
+              <td>
+                <span>
+                  2 MP
+                  720p
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  Dimensiones
+                </span>
+              </td>
+              <td>
+                <span>
+                  191.7 x 101
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  Peso
+                </span>
+              </td>
+              <td>
+                <span>
+                  260
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <form
+          aria-label="form"
+          class="buy-product"
+          data-testid="form-buy-product"
+        >
+          <h4
+            class="capacity"
+          >
+            Capacidad
+          </h4>
+          <div
+            class="basic-single css-b62m3t-container"
+          >
+            <span
+              class="css-1f43avz-a11yText-A11yText"
+              id="react-select-2-live-region"
+            />
+            <span
+              aria-atomic="false"
+              aria-live="polite"
+              aria-relevant="additions text"
+              class="css-1f43avz-a11yText-A11yText"
+            />
+            <div
+              class=" css-v68sna-control"
+            >
+              <div
+                class=" css-1fdsijx-ValueContainer"
+              >
+                <div
+                  class=" css-1jqq78o-placeholder"
+                  id="react-select-2-placeholder"
+                >
+                  Selecciona la capacidad de almacenamiento que desea
+                </div>
+                <div
+                  class=" css-qbdosj-Input"
+                  data-value=""
+                >
+                  <input
+                    aria-autocomplete="list"
+                    aria-describedby="react-select-2-placeholder"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    aria-label="Capacidad"
+                    autocapitalize="none"
+                    autocomplete="off"
+                    autocorrect="off"
+                    class=""
+                    id="react-select-2-input"
+                    role="combobox"
+                    spellcheck="false"
+                    style="opacity: 1; width: 100%; grid-area: 1 / 2; min-width: 2px; border: 0px; margin: 0px; outline: 0; padding: 0px;"
+                    tabindex="0"
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div
+                class=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  class=" css-1u9des2-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  class=" css-1xc3v61-indicatorContainer"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-tj5bde-Svg"
+                    focusable="false"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    width="20"
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4
+            class="colors-title"
+          >
+            Colores disponibles:
+          </h4>
+          <div
+            class="product-colors"
+          >
+            <div>
+              <label
+                class="Black null"
+                for="1"
+                style="background-color: black;"
+              />
+              <input
+                aria-label="color-1"
+                hidden=""
+                id="1"
+                name="1"
+                type="checkbox"
+              />
+            </div>
+            <div>
+              <label
+                class="White null"
+                for="2"
+                style="background-color: white;"
+              />
+              <input
+                aria-label="color-2"
+                hidden=""
+                id="2"
+                name="2"
+                type="checkbox"
+              />
+            </div>
+          </div>
+          <h3>
+            $ 
+            170
+          </h3>
+          <button
+            disabled=""
+          >
+            Añadir a la cesta
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

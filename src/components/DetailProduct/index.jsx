@@ -128,7 +128,7 @@ const Form = ({ handleSubmit, optionsProduct, actions, handleColorsChange, produ
   }
 
   return (
-    <form className='buy-product' onSubmit={handleSubmit} data-testid='form-buy-product'>
+    <form className='buy-product' onSubmit={handleSubmit} data-testid='form-buy-product' aria-label="form">
         <h4 className='capacity'>Capacidad</h4>
         <Select className='basic-single' aria-label='Capacidad' onChange={handleStorageChange} options={StorageOptions} defaultInputValue={storageDefault?.label} styles={colourStyles} placeholder="Selecciona la capacidad de almacenamiento que desea" />
         <h4 className='colors-title'>Colores disponibles:</h4>
@@ -136,7 +136,7 @@ const Form = ({ handleSubmit, optionsProduct, actions, handleColorsChange, produ
         {optionsProduct.colors.map((color) => (
             <div key={color.code}>
                 <label className={`${color.name} ${actions.colorCode === color.code ? 'active' : null}`} style={{ backgroundColor: color?.name.toLowerCase() }} htmlFor={color.code} />
-                <input type="checkbox" name={color.code} id={color.code} onChange={handleColorsChange} checked={actions.color === color.code} hidden />
+                <input type="checkbox" name={color.code} id={color.code} onChange={handleColorsChange} checked={actions.color === color.code} hidden aria-label={`color-${color.code}`} />
             </div>
         ))}
         </div>
