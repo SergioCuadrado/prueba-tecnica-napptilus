@@ -72,6 +72,7 @@ export const DetailProduct = ({ product, descriptionProducts, optionsProduct }) 
     progress: 0,
     theme: 'dark'
   })
+
   return (
     <>
       <Notification />
@@ -127,7 +128,7 @@ const Form = ({ handleSubmit, optionsProduct, actions, handleColorsChange, produ
   }
 
   return (
-    <form className='buy-product' onSubmit={handleSubmit}>
+    <form className='buy-product' onSubmit={handleSubmit} data-testid='form-buy-product'>
         <h4 className='capacity'>Capacidad</h4>
         <Select className='basic-single' aria-label='Capacidad' onChange={handleStorageChange} options={StorageOptions} defaultInputValue={storageDefault?.label} styles={colourStyles} placeholder="Selecciona la capacidad de almacenamiento que desea" />
         <h4 className='colors-title'>Colores disponibles:</h4>

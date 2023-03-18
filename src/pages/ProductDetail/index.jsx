@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { DetailProduct } from '../../components/DetailProduct'
+import { Loader } from '../../components/Loader'
 import { useProduct } from '../../hooks/useProduct'
 
 const DETAILS_IN_SPANISH = {
@@ -20,7 +21,7 @@ const DETAILS_IN_SPANISH = {
 
 export const ProductDetail = () => {
   const { id } = useParams()
-  const { getDetailProduct, product, error } = useProduct()
+  const { getDetailProduct, product, error, loading } = useProduct()
 
   useEffect(() => {
     getDetailProduct({ id })
@@ -39,6 +40,8 @@ export const ProductDetail = () => {
   const optionsProduct = product ? product.options : null
 
   if (error) return <DetailErrorProduct error={error} />
+  if (loading) return <Loader />
+
   return (
     <>
       {product
