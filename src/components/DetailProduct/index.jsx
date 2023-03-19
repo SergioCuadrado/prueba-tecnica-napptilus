@@ -22,7 +22,7 @@ export const DetailProduct = ({ product, descriptionProducts, optionsProduct }) 
     storageCode: storageDefault?.value ? storageDefault.value : ''
   })
 
-  const { getAddProductCart, error } = useAddProduct()
+  const { getAddProductCart, error, loading } = useAddProduct()
 
   const handleColorsChange = ({ target }) => {
     const colorCode = Number(target.name)
@@ -45,33 +45,34 @@ export const DetailProduct = ({ product, descriptionProducts, optionsProduct }) 
       id: product.description.id,
       ...actions
     }
+    const loadingCart = toast.loading('🛒 Añadiendo al carrito', {
+      position: 'top-right',
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: 0,
+      theme: 'dark'
+    })
     getAddProductCart(productAdded).then((res) => {
       if (error) {
-        return toast.error('🛒 Error al añadir al carrito', {
-          position: 'top-right',
+        toast.update(loadingCart, {
+          render: '🛒 Error al añadir al carrito',
+          type: toast.TYPE.ERROR,
           autoClose: 4000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: 0,
-          theme: 'dark'
+          isLoading: false
         })
       } else {
-        notify()
+        toast.update(loadingCart, {
+          render: '🛒 Añadido al carrito',
+          type: toast.TYPE.SUCCESS,
+          autoClose: 4000,
+          isLoading: false
+        })
       }
     })
   }
-  const notify = () => toast.success('🛒 Añadido al carrito', {
-    position: 'top-right',
-    autoClose: 4000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: 0,
-    theme: 'dark'
-  })
 
   return (
     <>
@@ -84,7 +85,7 @@ export const DetailProduct = ({ product, descriptionProducts, optionsProduct }) 
             <div className="content">
               <h2>{product.description.model}</h2>
               <TableDescription descriptionProducts={descriptionProducts} />
-              <Form handleSubmit={handleSubmit} optionsProduct={optionsProduct} actions={actions} handleColorsChange={handleColorsChange} product={product} storageDefault={storageDefault} handleStorageChange={handleStorageChange} StorageOptions={StorageOptions} />
+              <Form handleSubmit={handleSubmit} optionsProduct={optionsProduct} actions={actions} handleColorsChange={handleColorsChange} product={product} storageDefault={storageDefault} handleStorageChange={handleStorageChange} StorageOptions={StorageOptions} loading={loading} />
             </div>
         </div>
       </div>
@@ -115,7 +116,7 @@ const TableDescription = ({ descriptionProducts }) => (
   </table>
 )
 
-const Form = ({ handleSubmit, optionsProduct, actions, handleColorsChange, product, storageDefault, handleStorageChange, StorageOptions }) => {
+const Form = ({ handleSubmit, optionsProduct, actions, handleColorsChange, product, storageDefault, handleStorageChange, StorageOptions, loading }) => {
   const colourStyles = {
     control: (styles) => ({ ...styles, backgroundColor: 'white' }),
     option: (styles) => {
@@ -141,7 +142,7 @@ const Form = ({ handleSubmit, optionsProduct, actions, handleColorsChange, produ
         ))}
         </div>
         <h3>$ {product.description.price}</h3>
-        <button disabled={actions.colorCode === '' || actions.storageCode === ''}>Añadir a la cesta</button>
+        <button disabled={actions.colorCode === '' || actions.storageCode === '' || loading}>Añadir a la cesta</button>
     </form>
   )
 }
